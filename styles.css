@@ -6,7 +6,8 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background: url('background.webp') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */
 }
 
 h1 {
@@ -15,7 +16,11 @@ h1 {
 
 .container {
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Adds slight transparency to the center */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .square {
@@ -45,4 +50,45 @@ button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
+}
+
+/* Styles for the drawn names section */
+.drawn-names {
+    width: 150px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.drawn-names h3 {
+    margin-top: 0;
+}
+
+.drawn-names ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.drawn-names li {
+    margin-bottom: 10px;
+}
+
+/* Add styles for the new "Draw Again" button */
+#refreshButton {
+    display: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refreshButton:hover {
+    background-color: #0056b3;
 }

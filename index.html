@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank Holiday Coverage Lotto</title>
+    <title>Christmas Coverage Lotto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bank Holiday Coverage Lotto</h1>
+    <h1>Christmas Coverage Lotto</h1>
     <div class="container">
         <div class="square" id="displaySquare">Name</div>
-        <ul class="name-list">
-            <li>Daniel</li>
-            <li>Beston</li>
-            <li>Mihail</li>
-            <li>Ellie</li>
-            <li>Angie</li>
-            <li>Emma</li>
-            <li>Nicky</li>
-            <li>Trudy</li>
-        </ul>
+        
+        <!-- Section for displaying drawn names -->
+        <div class="drawn-names" id="drawnNames">
+            <h3>Drawn Names</h3>
+            <ul id="drawnNamesList">
+                <li>1.</li>
+                <li>2.</li>
+                <li>3.</li>
+            </ul>
+        </div>
     </div>
+
     <button onclick="shuffleNames()">Start Shuffling</button>
     <audio id="shuffleAudio" src="shuffle.mp3"></audio>
     <script src="script.js"></script>
